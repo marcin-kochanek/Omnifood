@@ -209,7 +209,6 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 20px;
 }
 
 .main-nav li {
@@ -276,6 +275,7 @@ header {
     left: 0;
     box-shadow: 0 2px 2px #d8d8d8;
     z-index: 9999;
+    padding: 0 2%
 }
 
 .sticky .main-nav li a:link,
