@@ -99,7 +99,7 @@ $(document).ready(function() {
         var nav = $('.js--main-nav'),
             icon = $('.js--nav-icon i');
 
-        if ($(window).width() > 767){
+        if ($(window).width() > 784){
             nav.css("display", "block");
             icon.addClass('ion-close-round');
             icon.removeClass('ion-navicon-round');
@@ -107,6 +107,23 @@ $(document).ready(function() {
             nav.css("display", "none");
             icon.addClass('ion-navicon-round');
             icon.removeClass('ion-close-round');
+        }
+    });
+    
+    //Map
+    var map = new GMaps({
+        div: '.map',
+        lat: 38.71136057,
+        lng: -9.03,
+        zoom: 12
+    });
+    
+    map.addMarker({
+        lat: 38.71636057,
+        lng: -9.16302432,
+        title: 'Lisbon',
+        infoWindow: {
+            content: 'Omnifood'
         }
     });
 });

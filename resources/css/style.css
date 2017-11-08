@@ -32,6 +32,7 @@ body {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 5px 0;
 }
 
 section {
@@ -145,6 +146,7 @@ input[type="submit"] {
     font-size: 90%;
     -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
+    cursor: pointer
 }
 
 .btn-full:link,
@@ -558,8 +560,32 @@ header {
 /* - CONTACT FORM - */
 /* ----------------------------*/
 
+.map-box {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 0;
+}
+
+.form-box {
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    padding-top: 50px;
+}
+
 .contact-form form {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -575,13 +601,9 @@ select {
     font-size: 80%;
 }
 
-select {
-    width: auto;
-}
-
 input[type="checkbox"] {
     width: auto;
-    margin: 10px 10px 10px 0;
+    margin-right: 5px;
 }
 
 textarea {

@@ -1,7 +1,7 @@
 /* Big tablets and other devices */
 @media only screen and (max-width: 1200px) {
     
-    .row { padding: 0 2%; }
+    .row { padding: 1% 2%; }
     
     .hero-text-box {
         width: 100%;
@@ -51,6 +51,10 @@
 
 /* Small phones to small tablets: from 481px to 784px */
 @media only screen and (max-width: 784px) {
+    
+    .row {
+        padding: 0% 2%;
+    }
     
     body { font-size: 16px; }
     section { padding: 35px 0; }
@@ -150,7 +154,32 @@
     
     .plan-box h3 { text-align: center; }
     
-    form div:last-child .col { text-align: center;}
+    .map-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .form-box {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    
+    form div:last-child .col { 
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    
     footer .col { width: 100%; }
     
     .footer-nav,
@@ -162,6 +191,12 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+    .row { padding: 1% 2%; }
+    
+    .form-box { 
+        font-size: 14px;
+        padding-top: 0;
+    }
     
     .contact-form form { width: 100%; }
     footer .col { width: 100%; }
